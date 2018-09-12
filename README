@@ -1,0 +1,14 @@
+To build the container, run
+```
+docker build --build-arg SSH_PRIVATE_KEY="$(cat ~/.ssh/id_rsa)" --tag docker-dev .
+```
+
+To run the jupyter notebook, run
+```
+docker run -p 8888:8888 docker-dev
+```
+
+To just open up a terminal real quick without needing a port,
+```
+docker run -it docker-dev
+```
