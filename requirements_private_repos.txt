@@ -1,0 +1,2 @@
+# insert requirements.txt git-ssh compatible link exampled by below
+# https://pip.readthedocs.io/en/1.1/requirements.html#version-control
