@@ -2,13 +2,12 @@ FROM python:3.6
 
 WORKDIR /root
 
+COPY requirements.txt ./
+
 RUN apt-get update && \
     apt-get install -y \
       vim \
-      git \ 
-      scala \
-      nmap \
-      postgresql-client
+      git
 
 RUN pip install --upgrade pip
 
