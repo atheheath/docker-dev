@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-git+ssh://git@github.com/alluvium-io/data-science.git@ah/primer-validation-update#egg=levee&subdirectory=utilities/Levee
-=======
-# insert requirements.txt git-ssh compatible link exampled by below
-# https://pip.readthedocs.io/en/1.1/requirements.html#version-control
->>>>>>> e3b55eb96c0cf1abaa2349afc28d2d6f7a37cf97
