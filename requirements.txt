@@ -1,5 +1,6 @@
 jupyter
+matplotlib
 numpy
 pandas
 tqdm
-matplotlib
+youtube-dl
