@@ -17,6 +17,12 @@ COPY requirements.txt ./
 RUN pip install -r requirements.txt
 RUN rm requirements.txt
 
+# Add python2 jupyter kernel
+RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
+    python2 get-pip.py && \
+    python2 -m pip install ipykernel && \
+    python2 -m ipykernel install --user
+
 # Add Tini. Tini operates as a process subreaper for jupyter. This prevents
 # kernel crashes.
 ENV TINI_VERSION v0.6.0
